@@ -13,9 +13,21 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-username = 'mkbhd'
-tweets_list = api.user_timeline(screen_name=username, count = 20) # Get the last tweet
+username = 'trikingxx'
+#tweets_list = api.user_timeline(screen_name=username, count = 20) # Get the last tweet
+tweets_list = tweepy.Cursor(api.user_timeline, 
+                        screen_name=username, 
+                        count=None,
+                        since_id=None,
+                        max_id=None,
+                        trim_user=True,
+                        exclude_replies=True,
+                        contributor_details=False,
+                        include_entities=False
+                        ).items(100)
 
 #tweet object type is <class 'tweepy.models.Status'>
 for tweet in tweets_list:
-    print(tweet.text, end='\n\n')
+    if (not tweet.retweeted) and ('RT @' not in tweet.text):
+        print(tweet.text)
+        print('\n')
