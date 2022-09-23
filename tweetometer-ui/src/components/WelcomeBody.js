@@ -4,6 +4,7 @@ export const WelcomeBody = () => {
           <div className="welcome-body">
             <h1 className="welcome-text"> Welcome to Tweetometer! </h1>
             <h2 className="welcome-text"> EC463 Mini Project </h2>
+            <h3 className="welcome-text"> By Abhinoor Singh and Chris Gough </h3>
             <div className="welcome-instructions-box">
                 <p className="instruction-text">Tweetometer is a tool that performs sentiment analysis. </p>
                 <p className="instruction-text">It checks if a twitter user has a bot account or is a human. </p>

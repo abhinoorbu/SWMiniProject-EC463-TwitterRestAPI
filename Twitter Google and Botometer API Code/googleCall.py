@@ -26,5 +26,5 @@ for category in response.categories:
 
 print(sentiment.score)
 
-#print("Text: {}".format(text))
-#print("Sentiment: {}, {}".format(sentiment.score, sentiment.magnitude))
+print("Text: {}".format(text))
+print("Sentiment: {}, {}".format(sentiment.score, sentiment.magnitude))
