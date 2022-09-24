@@ -6,6 +6,7 @@ The Tweetometer returns information about a Twitter user given their username. S
 1. A metric indicating the likelihood that the user is a bot
 2. A metric indicating the overall sentiment (positive/negative) of the users' tweets
 3. A list of that user's most frequently discussed topics
+
 In the event that the application user enters an invalid username, an error message is displayed indicating that this is the case. Occasionally, the sentiment analysis is unable to return a list of topics covered frequently by the user. In this case, a message displays to explain to the user that the Google API was not able to provide us with information regarding the content of the user's tweets.
 
 ## Design
@@ -14,6 +15,7 @@ The app was built in two stages: front-end and back-end. We focused initially on
 * How will we retrieve and access data?
 * What service will host our internal API?
 * What information will be returned to the front-end?
+
 We went with the classic approach of building an internal REST API, which made requests to the Twitter, Google, and Botometer APIs, and saved the responses in a JSON format. To gain access to this data, the front-end makes a POST request to the internal API, which takes the Twitter username, combines it with credentials already saved to the internal API, and returns the JSON object containing the relevant information to be displayed on the website. This strategy allows for a clean, simplified back-end, with a singular, clear connection between the front-end and the back-end. Since the internal API handles authentication, no information is needed in the POST request save the Twitter username the application user wishes to analyze.
 
 For hosting the server, we used Heroku, as it was by far the easiest option available to us and we didn't require a tremendous amount of resources. The request response time is always under 30 seconds, so we knew we wouldn't run into limitations with respect to the amount of data we were able to return. 
