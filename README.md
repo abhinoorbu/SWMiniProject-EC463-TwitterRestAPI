@@ -37,6 +37,7 @@ We followed the Agile framework, tracking our progress on Trello and meeting onc
 ## Usage
 
 Rest API Endpoint: https://ec463tweetometer.herokuapp.com/tweetometer
+
 React Web App Link: https://sw-mini-project-ec463-362503.web.app/
 
 Note: 
