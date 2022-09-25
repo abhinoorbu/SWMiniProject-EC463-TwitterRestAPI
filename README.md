@@ -1,6 +1,8 @@
 # SWMiniProject-EC463-TwitterRestAPI
 Developed by Abhinoor Singh and Chris Gough
 
+## Usage
+
 ## Functionality
 The Tweetometer returns information about a Twitter user given their username. Specifically, the app produces three outputs:
 1. A metric indicating the likelihood that the user is a bot
