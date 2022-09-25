@@ -45,3 +45,10 @@ Note:
 2) If the categories do not appear, then the Google NLP did not return anything.
 3) If a twitter user has few/no tweets, the API will throw an error msg.
 4) Example use cases could be @mkbhd @elonmusk @barackobama @espn etc
+
+Folder Organization:
+The repo contains three seperate folders. The first is "Twitter Google and Botometer API Code" this was the initial code written to call the API's seperately.
+
+The folder "flaskRESTApi" contains the combined API call code, and the flask code which represents the API endpoint, as well as the parsing and creating of the final json return object.
+
+The folder "tweetometer-ui" contains the react web app code that runs the front end, the main files to view are the App.js, and all of the files in the components folder as they represent the entirety of the UI. The file Form.js shows the API call and all of the parsing to display it onto the webpage.
