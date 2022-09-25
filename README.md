@@ -26,3 +26,7 @@ The front-end design was much simpler, as there were fewer design decisions that
 
 ## SDLC
 We followed the Agile framework, tracking our progress on Trello and meeting once a week to discuss relevant design decisions. Although we did not have an official daily scrum, we checked in with each other every couple of days to ensure that progress was being made and there were no roadblocks to completion, as well as to double-check our own design decisions. See the below images, which demonstrate our use of the Trello board:
+
+![image](https://user-images.githubusercontent.com/57511176/192169428-1249e46a-cd62-4ec6-8b03-b417cce0933c.png)
+
+![image](https://user-images.githubusercontent.com/57511176/192169378-712b9a30-5565-4135-ad83-957fa972201b.png)
